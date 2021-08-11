@@ -75,7 +75,10 @@ function obj:init()
       for _, kanji in pairs(hs.json.decode(io.open(self.spoonPath .. "/kanji/kanji-all.json"):read())) do
 
          
-         local subTexts = kanji.kanji .. " ^" ..  kanji.keyword .. " (" .. kanji.topreading  .. ") " .. kanji.strokes
+         local subTexts = kanji.kanji .. " ^" ..  kanji.keyword .. " (" .. kanji.topreading  .. ")"
+         if kanji.strokes then
+            subTexts = subTexts .. " " .. kanji.strokes .. " strokes"
+         end
          if kanji.components then
                subTexts = subTexts .. "\n" .. kanji.components:gsub("<br>", "\n")
          end

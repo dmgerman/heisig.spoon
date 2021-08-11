@@ -15,11 +15,15 @@
 
 This spoon provides a simple interface to select kanji via any information in their metadata.
 
-The simplest way to explain it is with an image. The user types Command-Ctrl-Alt K and a window appers.
-In this window all kanji appear, along with their metadata (heisig name, components, number of strokes).
-Start typing and the selection narrows. For example, this is what happens after typing /Wife/
+The simplest way to explain it is with an image. The user types Command-Ctrl-Alt K and a window appers.  In this window
+all kanji appear, along with their metadata (heisig name, components, number of strokes).  Start typing and the
+selection narrows. For example, this is what happens after typing /Wife/. Type return and the kanji will be inserted in the
+current application.
 
 [[./example.png]]
+
+
+
 
 This Spoon is based on a Spoon developed by Adriano Di Luzio to select emojis. See https://github.com/aldur/dotfiles/tree/master/osx/hammerspoon/Spoons/Emojis.spoon
 
