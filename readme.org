@@ -1,0 +1,25 @@
+#+STARTUP: showall
+#+STARTUP: lognotestate
+#+TAGS: research(r) uvic(u) today(y) todo(t) cooking(c)
+#+SEQ_TODO: TODO(t) STARTED(s) DEFERRED(r) CANCELLED(c) | WAITING(w) DELEGATED(d) APPT(a) DONE(d)
+#+DRAWERS: HIDDEN STATE
+#+ARCHIVE: %s_done::
+#+TITLE: A spoon  to easily select Kanji via their metadata
+#+CATEGORY: 
+#+PROPERTY: header-args:sql             :engine postgresql  :exports both :cmdline csc370
+#+PROPERTY: header-args:sqlite          :db /path/to/db  :colnames yes
+#+PROPERTY: header-args:C++             :results output :flags -std=c++17 -Wall --pedantic -Werror
+#+PROPERTY: header-args:R               :results output  :colnames yes
+#+PROPERTY: header-args:python          :results output  :exports both
+#+OPTIONS: ^:nil
+
+This spoon provides a simple interface to select kanji via any information in their metadata.
+
+The simplest way to explain it is with an image. The user types Command-Ctrl-Alt K and a window appers.
+In this window all kanji appear, along with their metadata (heisig name, components, number of strokes).
+Start typing and the selection narrows. For example, this is what happens after typing /Wife/
+
+[[./example.png]]
+
+This Spoon is based on a Spoon developed by Adriano Di Luzio to select emojis. See https://github.com/aldur/dotfiles/tree/master/osx/hammerspoon/Spoons/Emojis.spoon
+
