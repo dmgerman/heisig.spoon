@@ -11,7 +11,7 @@ obj.__index = obj
 -- luacheck: globals hs
 
 -- Metadata
-obj.name = "Kanjis"
+obj.name = "Heisig Kanji select"
 obj.version = "1.0"
 obj.author = "Adriano Di Luzio <adrianodl@hotmail.it>"
 obj.author = "Daniel M German <dmg@turingmachine.org>"
