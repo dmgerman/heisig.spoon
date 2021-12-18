@@ -66,7 +66,7 @@ function obj:init()
    local mod = nil
    local mod, err = table.load(obj.kanjisTablePath) -- luacheck: ignore
    if err then
-      print("Kanjis Spoon: table's not here, generating it from json.")
+      hs.alert("Kanjis Spoon: table's not here, generating it from json.")
       mod = nil
    end
    if not mod then
@@ -109,7 +109,7 @@ function obj:init()
       
       print("Kanjis Spoon: Saving kanjis... ")
       table.save(self.choices, obj.kanjisTablePath) -- luacheck: ignore
-      print("Kanjis Spoon: ... saved")
+      hs.alert("Kanjis Spoon: ... saved")
       mod = self.choices
    end
 
